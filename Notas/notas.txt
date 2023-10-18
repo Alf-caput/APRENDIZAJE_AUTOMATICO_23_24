@@ -1,0 +1,20 @@
+En un problema de clasificacion multiclase 
+one-hot encoding -> función de pérdida: categorical cross entropy
+enteros -> sparse categorical cross entropy
+Para clasificacion multiclases (n multiclases)
+nº de clases + 40 %  del nº de clases = 1.4*n = nº neuronas
+rmsprop es bueno para todo
+batch más pequeño => se sobreentrena antes
+muchas épocas => se sobreentrena antes
+regresión no es lo mismo que algoritmo regresión
+Diferentes atributos con diferentes rangos => todos al rango (0, 1)
+Usar media y desviación típica
+Normalizar los datos de entrenamiento con la media y desviación de los datos de test
+OJO
+Normalizar los datos de test con la media y desviación de los datos de test
+OJO
+Los datos de entrenamiento y de test deben ser lo más distintos posibles incluso en la normalización
+
+Si tengo pocos datos => validación K-folds (por debajo de 10_000 ya podríamos tener que usarlo opcionalmente)
+metrica en regresion => error absoluto medio
+Pocos datos => pocas capas
